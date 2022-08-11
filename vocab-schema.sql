@@ -8,10 +8,10 @@ CREATE SCHEMA vocab;
 USE vocab;
 
 CREATE TABLE vocab (
-    vocab_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    vocab_id INT PRIMARY KEY NOT NULL,
+    category VARCHAR(45) NOT NULL,
     word VARCHAR(45) NOT NULL,
-    word_definition VARCHAR(255) NOT NULL,
-    category VARCHAR(45) NOT NULL
+    word_definition VARCHAR(255) NOT NULL
     )
     
     
